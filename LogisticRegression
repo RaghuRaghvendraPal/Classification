@@ -92,8 +92,11 @@ def LogisticPlot(X_set, y_set):
     plt.legend()
     plt.show()
     return X1 , X2
-    
-LogisticPlot(X_train, y_train)
+
+# Visulazing the training set results
+X1 , X2 = LogisticPlot(X_train, y_train)
+
+# Visulazing the test set results
 X1, X2 = LogisticPlot(X_test, y_test)
 
 print( X1,  X2 )
